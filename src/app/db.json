@@ -1,0 +1,289 @@
+{
+  "question": [
+    {
+      "id": 1,
+      "content": "What is the correct syntax to print a message in the console in JavaScript?",
+      "marks": 1,
+      "options": [
+        {
+          "id": "a",
+          "content": "console.log('message');",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "content": "print('message');",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "content": "echo('message');",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "content": "log('message');",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "content": "Which of the following is a JavaScript framework?",
+      "marks": 1,
+      "options": [
+        {
+          "id": "a",
+          "content": "React",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "content": "Laravel",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "content": "Django",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "content": "Spring",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "content": "What does CSS stand for?",
+      "marks": 1,
+      "options": [
+        {
+          "id": "a",
+          "content": "Cascading Style Sheets",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "content": "Creative Style Sheets",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "content": "Computer Style Sheets",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "content": "Colorful Style Sheets",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "content": "Which HTML element do we use to embed JavaScript in a web page?",
+      "marks": 1,
+      "options": [
+        {
+          "id": "a",
+          "content": "<javascript>",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "content": "<script>",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "content": "<js>",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "content": "<code>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "content": "What is the purpose of the `this` keyword in JavaScript?",
+      "marks": 1,
+      "options": [
+        {
+          "id": "a",
+          "content": "It refers to the current HTML document.",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "content": "It refers to the current object.",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "content": "It refers to the previous object.",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "content": "It refers to the current function.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "content": "Which of the following is not a programming language?",
+      "marks": 1,
+      "options": [
+        {
+          "id": "a",
+          "content": "Python",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "content": "Java",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "content": "HTML",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "content": "Ruby",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "content": "Which method is used to create a new array from an existing array in JavaScript?",
+      "marks": 1,
+      "options": [
+        {
+          "id": "a",
+          "content": "slice()",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "content": "split()",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "content": "splice()",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "content": "concat()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "content": "What does the acronym SQL stand for?",
+      "marks": 1,
+      "options": [
+        {
+          "id": "a",
+          "content": "Structured Query Language",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "content": "Simple Query Language",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "content": "Standard Query Language",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "content": "Sequential Query Language",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "content": "Which operator is used to assign a value to a variable in JavaScript?",
+      "marks": 1,
+      "options": [
+        {
+          "id": "a",
+          "content": "=",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "content": "==",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "content": "===",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "content": "=>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "content": "Which built-in method returns the length of a string in JavaScript?",
+      "marks": 1,
+      "options": [
+        {
+          "id": "a",
+          "content": "length()",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "content": "size()",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "content": "index()",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "content": "length",
+          "isCorrect": true
+        }
+      ]
+    }
+  ],
+  "quizz": [
+    {
+      "id": 1,
+      "name": "Javascript Quiz 1",
+      "code": "jsquiz1",
+      "question": [1, 2, 3, 5, 7]
+    },
+    {
+      "id": 2,
+      "name": "General Programming Quiz 1",
+      "code": "genprogquiz1",
+      "question": [4, 6, 8, 9, 10]
+    }
+  ],
+  "quizzResults": []
+}

@@ -1,1 +1,9 @@
-<p>quizz-info works!</p>
+<div class="flex justify-center">
+  <div class="flex flex-col items-center w-96 mt-32 gap-2 shadow p-8 bg-white">
+    <h2>Hi {{quizzResult.name}}</h2>
+    <h4 class="text-lg">{{quizzInfo.name}}</h4>
+    <p>Total question: {{quizzInfo.question.length}}</p>
+
+    <button mat-flat-button color="warning" class="w-6/12" (click)="start()">Start</button>
+  </div>
+</div>

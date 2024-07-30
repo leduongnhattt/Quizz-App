@@ -2,7 +2,7 @@ export interface Quizz{
   id: number,
   name: string,
   code: string,
-  questions: number[]
+  question: number[]
 }
 export interface Question {
    id: number,
