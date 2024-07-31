@@ -1,1 +1,19 @@
-<p>quizz works!</p>
+<div class="flex justify-center">
+  @if(currentQuestion) {
+    <div class="flex flex-col items-center w-6/12 mt-32 gap-2 shadow p-8 bg-white">
+      <h4 class="text-lg">{{quizzInfo.name}}</h4>
+      <div class="w-full p-4 shadow mb-2">
+        <p>{{currentQuestion.content}}</p>
+      </div>
+      @for(option of currentQuestion.options; track option) {
+        <div class="w-full p-4 shadow mb-2 flex cursor-pointer items-center" (click)="currentSelectedOptionId = option.id">
+          <mat-radio-button color="primary" [value]="option.id" [checked]="currentSelectedOptionId == option.id"></mat-radio-button>
+          <p>{{option.content}}</p>
+        </div>
+      }
+      <div class="flex justify-end w-full">
+        <button mat-flat-button color="primary" (click)="next()">Save & Next</button>
+      </div>
+    </div>
+  }
+</div>

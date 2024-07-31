@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
-import { Quizz, QuizzResult } from '../types';
+import { Question, Quizz, QuizzResult } from '../types';
 import { catchError, Observable, of } from 'rxjs';
 
 @Injectable({
@@ -31,10 +31,16 @@ export class TestService {
       catchError(this.handleError<Quizz>("getQuizzById"))
     )
   }
+  getQuestions(): Observable<Question []> {
+    return this.http.get<Question[]>("http://localhost:3000/question").pipe(
+      catchError(this.handleError<Question []>('getQuestion'))
+    );
+  }
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
       console.error(`${operation} failed: ${error.message}`);
       return of(result as T)
     }
   }
+
 }
