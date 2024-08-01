@@ -12,7 +12,13 @@
         </div>
       }
       <div class="flex justify-end w-full">
-        <button mat-flat-button color="primary" (click)="next()">Save & Next</button>
+        @if(currentQuestionNo == quizzInfo.question.length - 1) {
+          <button mat-flat-button color="primary" (click)="Submit()">Submit</button>
+        }
+        @else {
+          <button mat-flat-button color="primary" (click)="next()">Save & Next</button>
+        }
+
       </div>
     </div>
   }

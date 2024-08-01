@@ -1,3 +1,4 @@
+
 import { Component, inject, OnInit } from '@angular/core';
 import { TestService } from '../../services/test.service';
 import { Question, Quizz, QuizzResult } from '../../types';
@@ -37,6 +38,38 @@ export class QuizzComponent {
     })
     this.currentQuestionNo++;
     this.currentSelectedOptionId = ""
+  }
+  Submit() {
+    this.next();
+    this.calculateResult();
+    this.router.navigateByUrl('quizz-score')
+  }
+  calculateResult() {
+    let score = 0;
+    let correct = 0;
+    let unCorrect = 0;
+    let totalMark = 0;
+    let unAttempt = 0;
+    let percentage = 0;
+    this.quizzResult.respone?.forEach((respone) => {
+      let questionId = respone.questionId;
+      let selectedOptionId = respone.answerOptionId;
+      let question = this.questions.find(x => x.id == questionId)
+      let correctOption = question?.options.find(x => x.isCorrect == true);
+      totalMark += question!.marks;
+      if(!selectedOptionId){
+        unAttempt++;
+      }
+      else if (selectedOptionId == correctOption?.id) {
+        correct++;
+        score += question!.negativeMarks;
+      }
+      else {
+        unCorrect++;
+        score -= question!.negativeMarks;
+      }
+    });
+    percentage = Math.round((score / totalMark) * 100);
   }
   currentSelectedOptionId: string = ''
   router = inject(Router)
