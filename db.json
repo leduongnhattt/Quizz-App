@@ -4,6 +4,8 @@
       "id": "1",
       "content": "What is the correct syntax to print a message in the console in JavaScript?",
       "marks": 1,
+      "negativeMarks": 1,
+      "navigateMark": 1,
       "options": [
         {
           "id": "a",
@@ -31,6 +33,7 @@
       "id": "2",
       "content": "Which of the following is a JavaScript framework?",
       "marks": 1,
+      "navigateMark": 1,
       "options": [
         {
           "id": "a",
@@ -58,6 +61,7 @@
       "id": "3",
       "content": "What does CSS stand for?",
       "marks": 1,
+      "navigateMark": 1,
       "options": [
         {
           "id": "a",
@@ -85,6 +89,7 @@
       "id": "4",
       "content": "Which HTML element do we use to embed JavaScript in a web page?",
       "marks": 1,
+      "navigateMark": 1,
       "options": [
         {
           "id": "a",
@@ -112,6 +117,7 @@
       "id": "5",
       "content": "What is the purpose of the `this` keyword in JavaScript?",
       "marks": 1,
+      "navigateMark": 1,
       "options": [
         {
           "id": "a",
@@ -139,6 +145,7 @@
       "id": "6",
       "content": "Which of the following is not a programming language?",
       "marks": 1,
+      "navigateMark": 1,
       "options": [
         {
           "id": "a",
@@ -166,6 +173,7 @@
       "id": "7",
       "content": "Which method is used to create a new array from an existing array in JavaScript?",
       "marks": 1,
+      "navigateMark": 1,
       "options": [
         {
           "id": "a",
@@ -193,6 +201,7 @@
       "id": "8",
       "content": "What does the acronym SQL stand for?",
       "marks": 1,
+      "navigateMark": 1,
       "options": [
         {
           "id": "a",
@@ -220,6 +229,7 @@
       "id": "9",
       "content": "Which operator is used to assign a value to a variable in JavaScript?",
       "marks": 1,
+      "navigateMark": 1,
       "options": [
         {
           "id": "a",
@@ -247,6 +257,7 @@
       "id": "10",
       "content": "Which built-in method returns the length of a string in JavaScript?",
       "marks": 1,
+      "navigateMark": 1,
       "options": [
         {
           "id": "a",
@@ -299,69 +310,100 @@
   ],
   "quizzResults": [
     {
-      "id": "00df",
-      "name": "aaaa",
-      "quizzId": "1"
+      "id": "8dd0",
+      "name": "LeDuongNhat",
+      "quizzId": "2",
+      "respone": [
+        {
+          "questionId": "4",
+          "answerOptionId": "a"
+        },
+        {
+          "questionId": "6",
+          "answerOptionId": "c"
+        },
+        {
+          "questionId": "8",
+          "answerOptionId": "a"
+        },
+        {
+          "questionId": "9",
+          "answerOptionId": "a"
+        },
+        {
+          "questionId": "10",
+          "answerOptionId": "d"
+        }
+      ],
+      "correct": 4,
+      "score": null,
+      "unAttempt": 0,
+      "percentage": null,
+      "unCorrect": 1
     },
     {
-      "id": "9587",
-      "name": "âdasfsafasf",
-      "quizzId": "1"
-    },
-    {
-      "id": "ef47",
-      "name": "ádsadssad",
-      "quizzId": "1"
-    },
-    {
-      "id": "a9d1",
-      "name": "dfhghfg",
-      "quizzId": "1"
-    },
-    {
-      "id": "cc44",
+      "id": "aca1",
       "name": "âsass",
-      "quizzId": "1"
+      "quizzId": "2",
+      "response": [
+        {
+          "questionId": "4",
+          "answerOptionId": "c"
+        },
+        {
+          "questionId": "6",
+          "answerOptionId": "c"
+        },
+        {
+          "questionId": "8",
+          "answerOptionId": "a"
+        },
+        {
+          "questionId": "9",
+          "answerOptionId": "a"
+        },
+        {
+          "questionId": "10",
+          "answerOptionId": "d"
+        }
+      ],
+      "correct": 4,
+      "score": null,
+      "unAttempt": 0,
+      "percentage": null,
+      "unCorrect": 1
     },
     {
-      "id": "87d6",
-      "name": "áafafasf",
-      "quizzId": "1"
-    },
-    {
-      "id": "51c0",
-      "name": "sadadsad",
-      "quizzId": "1"
-    },
-    {
-      "id": "8bbc",
-      "name": "ấdad",
-      "quizzId": "1"
-    },
-    {
-      "id": "9917",
-      "name": "xvcxvxcv",
-      "quizzId": "1"
-    },
-    {
-      "id": "45d8",
-      "name": "sadasdsaddsa",
-      "quizzId": "2"
-    },
-    {
-      "id": "be73",
-      "name": "sdsdsd",
-      "quizzId": "1"
-    },
-    {
-      "id": "e485",
-      "name": "dsadsadasdasdasdsad",
-      "quizzId": "2"
-    },
-    {
-      "id": "7982",
-      "name": "jkjhkhjk",
-      "quizzId": "1"
+      "id": "2d1f",
+      "name": "âsasas",
+      "quizzId": "2",
+      "response": [
+        {
+          "questionId": "4",
+          "answerOptionId": "b"
+        },
+        {
+          "questionId": "6",
+          "answerOptionId": "c"
+        },
+        {
+          "questionId": "8",
+          "answerOptionId": "a"
+        },
+        {
+          "questionId": "9",
+          "answerOptionId": "a"
+        },
+        {
+          "questionId": "10",
+          "answerOptionId": "d"
+        }
+      ],
+      "correct": 5,
+      "score": 5,
+      "unAttempt": 0,
+      "percentage": 100,
+      "unCorrect": 0
     }
   ]
 }

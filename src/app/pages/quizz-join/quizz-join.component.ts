@@ -23,7 +23,8 @@ export class QuizzJoinComponent {
       let quizz = result[0];
       let quizzResult: QuizzResult = {
         name: this.name,
-        quizzId: quizz.id
+        quizzId: quizz.id,
+        response: [],
       }
       this.testService.joinQuizz(quizzResult).subscribe((respone) => {
         this.testService.quizzResult = respone;

@@ -8,11 +8,7 @@ import { catchError, Observable, of } from 'rxjs';
 })
 export class TestService {
   http = inject(HttpClient)
-  quizzResult: QuizzResult = {
-    id: 1,
-    name: "âsass",
-    quizzId: 1
-  }
+  quizzResult!: QuizzResult;
   constructor() {
 
   }
@@ -32,9 +28,15 @@ export class TestService {
     )
   }
   getQuestions(): Observable<Question []> {
-    return this.http.get<Question[]>("http://localhost:3000/question").pipe(
+    return this.http.get<Question[]>("http://localhost:3000/question/").pipe(
       catchError(this.handleError<Question []>('getQuestion'))
     );
+  }
+  updateQuizzResult(id: number, result: QuizzResult) {
+    return this.http.put<any>('http://localhost:3000/quizzResults/'+ id, result)
+  }
+  getQuizzResult(id: number) {
+    return this.http.get<QuizzResult>('http://localhost:3000/quizzResults/'+ id)
   }
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {

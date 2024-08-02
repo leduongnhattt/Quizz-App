@@ -22,9 +22,10 @@ export interface QuizzResult {
   name: string,
   score?: number,
   percentage?: number,
-  isCorrect?: number,
+  unCorrect?: number,
+  correct?: number,
   unAttempt?: number,
-  respone?: {
+  response?: {
     questionId: number,
     answerOptionId: string
   } []

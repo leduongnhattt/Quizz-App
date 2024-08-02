@@ -31,7 +31,7 @@ export class QuizzComponent {
     return this.questions.find(x => x.id == questionId)
   }
   next() {
-    this.quizzResult.respone?.push({
+    this.quizzResult.response?.push({
       questionId: this.currentQuestion!.id,
       answerOptionId: this.currentSelectedOptionId
 
@@ -42,6 +42,7 @@ export class QuizzComponent {
   Submit() {
     this.next();
     this.calculateResult();
+    this.testService.updateQuizzResult(this.quizzResult.id!, this.quizzResult).subscribe()
     this.router.navigateByUrl('quizz-score')
   }
   calculateResult() {
@@ -51,7 +52,7 @@ export class QuizzComponent {
     let totalMark = 0;
     let unAttempt = 0;
     let percentage = 0;
-    this.quizzResult.respone?.forEach((respone) => {
+    this.quizzResult.response?.forEach((respone) => {
       let questionId = respone.questionId;
       let selectedOptionId = respone.answerOptionId;
       let question = this.questions.find(x => x.id == questionId)
@@ -62,7 +63,7 @@ export class QuizzComponent {
       }
       else if (selectedOptionId == correctOption?.id) {
         correct++;
-        score += question!.negativeMarks;
+        score += question!.marks;
       }
       else {
         unCorrect++;
@@ -70,6 +71,11 @@ export class QuizzComponent {
       }
     });
     percentage = Math.round((score / totalMark) * 100);
+    this.quizzResult.correct = correct;
+    this.quizzResult.score = score;
+    this.quizzResult.unAttempt = unAttempt;
+    this.quizzResult.percentage = percentage;
+    this.quizzResult.unCorrect = unCorrect;
   }
   currentSelectedOptionId: string = ''
   router = inject(Router)
@@ -78,5 +84,4 @@ export class QuizzComponent {
   quizzInfo !: Quizz
   quizzResult !: QuizzResult
   currentQuestionNo: number = 0;
-
 }
